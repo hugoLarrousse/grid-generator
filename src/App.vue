@@ -1,5 +1,5 @@
 <template>
-    <header class="header"> CSS GRID</header>
+    <header> CSS GRID </header>
     <div class="built">
       Built with
       <img alt="vite logo" src="./assets/vite.svg"> Vite +
@@ -41,7 +41,7 @@ import Grid from './components/Grid.vue'
    background: linear-gradient(180deg, #131321 0, #3b306d);
  }
 
- .header {
+ header {
    height: 80px;
    /* border-bottom: 1px solid rgb(255, 255, 255, 0.2); */
    color: var(--white);
@@ -49,6 +49,19 @@ import Grid from './components/Grid.vue'
    display: flex;
    align-items: center;
    justify-content: center;
+   margin-top: 10px;
+ }
+  .built {
+   font-family: monospace;
+   color: var(--white);
+   font-size: 15px;
+   font-style: italic;
+   margin-bottom: 5px;
+ }
+ .built > img {
+   height: 15px;
+   position: relative;
+   top: 2px;
  }
  .dividing {
     height: 2px;
@@ -61,17 +74,7 @@ import Grid from './components/Grid.vue'
    align-items: center;
  }
 
- .built {
-   font-family: monospace;
-   color: var(--white);
-   font-size: 15px;
-   font-style: italic;
- }
- .built > img {
-   height: 15px;
-   position: relative;
-   top: 2px;
- }
+
 
  @media (max-width: 870px) {
    .main-section {
